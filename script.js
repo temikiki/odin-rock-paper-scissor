@@ -1,9 +1,12 @@
 let computer;
+player = prompt("rock, paper, scissor, pick one:");
+getcomputerchoice();
+
 
 function getcomputerchoice(){
-    computer = math.floor(math.random() * 3) + 1;
+    computerchoice = Math.floor(Math.random() * 3) + 1;
     
-    switch(computer){
+    switch(computerchoice){
         case 1:
             computer = "rock";
             break;
@@ -15,15 +18,18 @@ function getcomputerchoice(){
     }
 }
 
-player = prompt("rock, paper, scissor, pick one:")
-console.log(computer);
 
-function gamerules(player, computer){
+
+
+console.log("computer's choice:" + computer);
+console.log("palyer's choice:" + player)
+
+function gamerules(){
     if (computer == player){
         console.log("Draw");
     }
     else if (computer == "rock" && player == "scissor"){
-        console.log("computer wins, player losos")
+        console.log("computer wins, player loses")
     }
     else if (computer == "scissor" && player == "paper"){
         console.log("computer wins, player loses")
