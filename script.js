@@ -1,8 +1,3 @@
-//let computer;
-
-//player = prompt("rock, paper, scissor, pick one:");
-//getcomputerchoice();
-
 const playerText = document.querySelector("#playerText");
 const computerText = document.querySelector("#computerText");
 const resultText = document.querySelector("#resultText");
@@ -73,5 +68,4 @@ function gamerules(){
     }
     
 }
-gamerules();
-//console.log("hello")
+
